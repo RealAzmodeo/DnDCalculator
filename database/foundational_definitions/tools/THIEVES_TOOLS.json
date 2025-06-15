@@ -1,0 +1,13 @@
+
+{
+    "toolID": "THIEVES_TOOLS",
+    "fullName": "Thieves' Tools",
+    "category": "Artisan's Tools",
+    "cost": { "amount": 25, "currencyID_Ref": "GP" },
+    "weight": 1,
+    "description": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers.",
+    "associatedSkillChecks_List": [
+        { "skillID_Ref": "SLIGHT_OF_HAND", "task_description": "Disarm trap, open lock" },
+        { "skillID_Ref": "INVESTIGATION", "task_description": "Examine trap to understand its workings" }
+    ]
+}

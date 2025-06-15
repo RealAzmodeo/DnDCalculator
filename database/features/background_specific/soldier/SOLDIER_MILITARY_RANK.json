@@ -1,0 +1,15 @@
+
+{
+    "featureID": "SOLDIER_MILITARY_RANK",
+    "fullName": "Military Rank",
+    "sourceType": "BACKGROUND_FEATURE",
+    "sourceID_Ref": "SOLDIER",
+    "levelRequirement": 1,
+    "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.",
+    "parsedEffects_List": [
+        {
+            "effectType": "SOCIAL_BENEFIT",
+            "details": "Recognized military rank. Loyal soldiers of lower rank defer. Can exert influence, requisition simple equipment/horses. Access to friendly military sites where rank is recognized."
+        }
+    ]
+}

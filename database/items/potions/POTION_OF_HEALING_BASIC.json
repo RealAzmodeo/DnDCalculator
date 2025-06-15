@@ -1,0 +1,30 @@
+
+{
+    "itemID": "POTION_OF_HEALING_BASIC",
+    "fullName": "Potion of Healing (Basic)",
+    "itemCategory": "POTION",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A character who drinks the magical red fluid in this vial regains hit points.",
+    "cost": { "amount": 50, "currencyID_Ref": "GP" },
+    "weight": 0.5,
+    "requiresAttunement": false,
+    "properties": {
+        "consumableSpecifics": {
+            "actionToConsume_Ref": "ACTION"
+        }
+    },
+    "parsedEffects_List": [
+        {
+            "effectType": "HEAL",
+            "targetSelector": "SELF_CONSUMER",
+            "healingRolls_List": [
+                {
+                    "diceCount": 2,
+                    "diceID_Ref": "D4",
+                    "bonusHealing": 2
+                }
+            ],
+            "trigger": "ON_CONSUME"
+        }
+    ]
+}

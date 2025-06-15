@@ -1,0 +1,20 @@
+
+{
+    "subclassID": "BATTLE_MASTER_WARRIOR",
+    "fullName": "Battle Master",
+    "classID_Ref": "WARRIOR",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "Followers of the Battle Master archetype employ martial techniques passed down through generations.",
+    "levelProgressionTable": {
+        "3": {
+            "featuresGained_Ref_List": [
+                "BATTLEMASTER_COMBAT_SUPERIORITY", 
+                "BATTLEMASTER_STUDENT_OF_WAR",     
+                "BATTLEMASTER_MANEUVER_CHOICE_3"  
+            ]
+        },
+        "7": {
+            "featuresGained_Ref_List": ["BATTLEMASTER_KNOW_YOUR_ENEMY", "BATTLEMASTER_MANEUVER_CHOICE_2_MORE"]
+        }
+    }
+}

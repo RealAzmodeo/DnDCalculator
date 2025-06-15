@@ -1,0 +1,15 @@
+
+{
+    "conditionID": "EXHAUSTED_LVL1_2024",
+    "fullName": "Exhausted (Level 1)",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "You have disadvantage on all d20 Tests (attack rolls, ability checks, and saving throws).",
+    "parsedEffects_List": [
+        {
+            "effectType": "IMPOSE_DISADVANTAGE",
+            "targetScope": "SELF",
+            "onRollType_Ref_List": ["ATTACK_ROLL", "ABILITY_CHECK", "SAVING_THROW"],
+            "details": "Disadvantage on all d20 Tests."
+        }
+    ]
+}

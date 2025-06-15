@@ -1,0 +1,10 @@
+
+{
+    "toolID": "VEHICLES_LAND",
+    "fullName": "Vehicles (Land)",
+    "category": "Vehicles",
+    "cost": { "amount": 0, "currencyID_Ref": "GP" }, 
+    "weight": 0,
+    "description": "Proficiency with land vehicles.",
+    "associatedSkillChecks_List": []
+}

@@ -1,0 +1,14 @@
+
+{
+    "conditionID": "RESTRAINED",
+    "fullName": "Restrained",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed. Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage. The creature has disadvantage on Dexterity saving throws.",
+    "parsedEffects_List": [
+        { "effectType": "SET_SPEED", "value": 0 },
+        { "effectType": "NEGATE_BONUS", "bonusTo": "SPEED" },
+        { "effectType": "GRANT_ADVANTAGE_TO_ATTACKERS" },
+        { "effectType": "IMPOSE_DISADVANTAGE", "onRollType_Ref_List": ["ATTACK_ROLL"] },
+        { "effectType": "IMPOSE_DISADVANTAGE_ON_SAVE", "abilityID_Ref_List": ["DEX"] }
+    ]
+}

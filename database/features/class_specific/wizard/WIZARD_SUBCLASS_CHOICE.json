@@ -1,0 +1,15 @@
+
+{
+    "featureID": "WIZARD_SUBCLASS_CHOICE",
+    "fullName": "Arcane Tradition Choice",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WIZARD",
+    "levelRequirement": 2,
+    "description": "At 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_SUBCLASS_CHOICE",
+            "subclassTitle": "Arcane Tradition"
+        }
+    ]
+}

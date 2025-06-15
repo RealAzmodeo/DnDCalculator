@@ -1,0 +1,21 @@
+
+{
+    "conditionID": "SURPRISED",
+    "fullName": "Surprised",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.",
+    "parsedEffects_List": [
+        {
+            "effectType": "PREVENT_MOVEMENT_ON_FIRST_TURN",
+            "details": "Cannot move on first turn of combat if surprised."
+        },
+        {
+            "effectType": "PREVENT_ACTION_ON_FIRST_TURN",
+            "details": "Cannot take an action on first turn of combat if surprised."
+        },
+        {
+            "effectType": "PREVENT_REACTION_UNTIL_FIRST_TURN_ENDS",
+            "details": "Cannot take a reaction until the first turn of combat ends if surprised."
+        }
+    ]
+}

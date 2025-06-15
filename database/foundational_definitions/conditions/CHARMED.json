@@ -1,0 +1,23 @@
+
+{
+    "conditionID": "CHARMED",
+    "fullName": "Charmed",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects. The charmer has advantage on any ability check to interact socially with the creature.",
+    "parsedEffects_List": [
+        {
+            "effectType": "RESTRICT_TARGETING",
+            "targetScope": "SELF",
+            "restrictedTarget": "CHARMER",
+            "restrictionType": "CANNOT_ATTACK_OR_HARM",
+            "details": "Cannot attack or target charmer with harmful abilities/effects."
+        },
+        {
+            "effectType": "GRANT_ADVANTAGE_TO_OTHER",
+            "targetScope": "CHARMER", 
+            "onCheckType": "ABILITY_CHECK",
+            "interactionType": "SOCIAL",
+            "details": "Charmer has advantage on social ability checks against the creature."
+        }
+    ]
+}

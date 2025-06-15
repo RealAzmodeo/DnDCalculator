@@ -1,0 +1,31 @@
+
+{
+    "featID": "ALERT",
+    "fullName": "Alert",
+    "sourceSystem": "DND_2024_RULES",
+    "prerequisites_Structured_List": [],
+    "description": "Always on the lookout for danger, you gain the following benefits: You gain a +5 bonus to initiative. You can't be surprised while you are conscious. Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_BONUS",
+            "targetSelector": "SELF",
+            "bonusTo_Ref": "INITIATIVE_ROLL",
+            "bonusValue": 5,
+            "bonusType": "STATIC_UNTYPED",
+            "duration": "PERMANENT_PASSIVE"
+        },
+        {
+            "effectType": "GRANT_IMMUNITY",
+            "targetSelector": "SELF",
+            "immunityToCondition_Ref": "SURPRISED",
+            "condition": "WHILE_CONSCIOUS",
+            "duration": "PERMANENT_PASSIVE"
+        },
+        {
+            "effectType": "NEGATE_ADVANTAGE_FOR_ATTACKERS",
+            "targetSelector": "SELF",
+            "conditionForNegation": "ATTACKER_IS_UNSEEN_BY_SELF",
+            "duration": "PERMANENT_PASSIVE"
+        }
+    ]
+}

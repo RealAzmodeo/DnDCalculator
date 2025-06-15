@@ -1,0 +1,16 @@
+
+{
+    "featureID": "EXTRA_ATTACK_WARRIOR_1",
+    "fullName": "Extra Attack (1)",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WARRIOR",
+    "levelRequirement": 5,
+    "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.",
+    "parsedEffects_List": [
+        {
+            "effectType": "MODIFY_ACTION",
+            "actionToModify_Ref": "ATTACK_ACTION", 
+            "modificationDetails": "Allows two attacks instead of one with the Attack action."
+        }
+    ]
+}

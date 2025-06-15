@@ -1,0 +1,6 @@
+
+{
+    "rollTypeID": "ATTACK_ROLL",
+    "fullName": "Attack Roll",
+    "description": "A d20 roll made to determine if an attack hits a target."
+}

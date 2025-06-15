@@ -1,0 +1,7 @@
+
+{
+    "skillID": "ATHLETICS",
+    "fullName": "Athletics",
+    "description": "Covers difficult situations you encounter while climbing, jumping, or swimming.",
+    "defaultAbilityScoreID_Ref": "STR"
+}

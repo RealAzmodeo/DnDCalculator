@@ -1,0 +1,16 @@
+
+{
+    "subclassID": "SCHOOL_OF_EVOCATION_WIZARD",
+    "fullName": "School of Evocation",
+    "classID_Ref": "WIZARD",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid.",
+    "levelProgressionTable": {
+        "2": {
+            "featuresGained_Ref_List": ["EVOKER_SCULPT_SPELLS", "EVOKER_SAVANT"]
+        },
+        "6": {
+            "featuresGained_Ref_List": ["EVOKER_POTENT_CANTRIP"]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+
+{
+    "featureID": "BATTLEMASTER_MANEUVER_CHOICE_3",
+    "fullName": "Maneuvers (Choose 3)",
+    "sourceType": "SUBCLASS_FEATURE",
+    "sourceID_Ref": "BATTLE_MASTER_WARRIOR",
+    "levelRequirement": 3,
+    "description": "You learn three maneuvers of your choice from the list of available maneuvers for the Battle Master archetype.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_CHOICE_FROM_LIST",
+            "choiceCategory": "BATTLEMASTER_MANEUVER",
+            "count": 3
+        }
+    ]
+}

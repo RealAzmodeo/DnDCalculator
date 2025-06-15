@@ -1,0 +1,22 @@
+
+{
+    "conditionID": "GRAPPLED",
+    "fullName": "Grappled",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed. The condition ends if the grappler is incapacitated. The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the Thunderwave spell.",
+    "parsedEffects_List": [
+        {
+            "effectType": "SET_SPEED",
+            "targetScope": "SELF",
+            "value": 0,
+            "details": "Speed becomes 0."
+        },
+        {
+            "effectType": "NEGATE_BONUS",
+            "targetScope": "SELF",
+            "bonusTo": "SPEED",
+            "details": "Cannot benefit from bonuses to speed."
+        }
+    ],
+    "endingConditions_List": ["GRAPPLER_INCAPACITATED", "MOVED_OUT_OF_REACH_OF_GRAPPLER"]
+}

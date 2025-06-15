@@ -1,0 +1,7 @@
+
+{
+    "shapeID": "SPHERE",
+    "fullName": "Sphere",
+    "description": "Select a point of origin, and the sphere extends outward from that point.",
+    "dimensionParametersNeeded": ["radius"]
+}

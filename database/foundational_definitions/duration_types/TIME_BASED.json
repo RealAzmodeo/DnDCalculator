@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "TIME_BASED",
+    "fullName": "Time-Based",
+    "description": "The effect lasts for a specific duration of time (e.g., 1 minute, 8 hours).",
+    "needsMaxValue": true,
+    "needsMaxUnit": true
+}

@@ -1,0 +1,16 @@
+
+{
+    "featureID": "BATTLEMASTER_MANEUVER_CHOICE_2_MORE",
+    "fullName": "Maneuvers (Choose 2 More)",
+    "sourceType": "SUBCLASS_FEATURE",
+    "sourceID_Ref": "BATTLE_MASTER_WARRIOR",
+    "levelRequirement": 7,
+    "description": "You learn two additional maneuvers of your choice from the list of available maneuvers for the Battle Master archetype.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_CHOICE_FROM_LIST",
+            "choiceCategory": "BATTLEMASTER_MANEUVER",
+            "count": 2
+        }
+    ]
+}

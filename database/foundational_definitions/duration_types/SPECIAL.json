@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "SPECIAL_DURATION",
+    "fullName": "Special",
+    "description": "The effect's duration is determined by special rules described in its effect.",
+    "needsMaxValue": false,
+    "needsMaxUnit": false
+}

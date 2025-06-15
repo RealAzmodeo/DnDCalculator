@@ -1,0 +1,23 @@
+
+{
+    "speciesID": "HUMAN",
+    "fullName": "Human",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "Humans are the most adaptable and ambitious people among the common species.",
+    "sizeCategoryID_Ref": "MEDIUM_SIZE",
+    "baseSpeed": { "WALK": 30 },
+    "abilityScoreIncreases_Option": {
+        "type": "CHOOSE_TWO_DIFFERENT_PLUS_ONE_AND_ONE_PLUS_ONE_FEAT",
+        "notes": "Increase two different ability scores by 1. You also gain one feat of your choice for which you qualify. (Note: ASI likely moved to Background in 2024; this is placeholder if species gives choice or for older rules interpretation)"
+    },
+    "languages_List_Ref": ["COMMON"],
+    "languageOptions": {
+        "count": 1,
+        "type": "CHOOSE_FROM_ANY_STANDARD"
+    },
+    "grantedFeatures_List_Ref": ["HUMAN_RESOURCEFULNESS"],
+    "featOptions": {
+        "count": 1,
+        "type": "CHOOSE_ANY_QUALIFIED_LVL1" 
+    }
+}

@@ -1,0 +1,14 @@
+
+{
+    "featureID": "ABILITY_SCORE_IMPROVEMENT_WIZARD_4",
+    "fullName": "Ability Score Improvement (Wizard Lvl 4)",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WIZARD",
+    "levelRequirement": 4,
+    "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature. Alternatively, you can choose a feat.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_ABILITY_SCORE_INCREASE_OR_FEAT_CHOICE"
+        }
+    ]
+}

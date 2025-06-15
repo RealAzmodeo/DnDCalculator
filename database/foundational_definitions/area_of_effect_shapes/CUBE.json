@@ -1,0 +1,7 @@
+
+{
+    "shapeID": "CUBE",
+    "fullName": "Cube",
+    "description": "You select the cube's point of origin, which lies anywhere on a face of the cubic effect.",
+    "dimensionParametersNeeded": ["sideLength"]
+}

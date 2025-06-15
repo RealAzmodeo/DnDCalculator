@@ -1,0 +1,36 @@
+
+{
+    "conditionID": "PETRIFIED",
+    "fullName": "Petrified",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging. The creature is incapacitated, can't move or speak, and is unaware of its surroundings. Attack rolls against the creature have advantage. The creature automatically fails Strength and Dexterity saving throws. The creature has resistance to all damage. The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.",
+    "parsedEffects_List": [
+        { "effectType": "APPLY_CONDITION", "condition_Ref": "INCAPACITATED" },
+        { "effectType": "SET_SPEED", "value": 0 },
+        { "effectType": "CANNOT_SPEAK" },
+        { "effectType": "UNAWARE_OF_SURROUNDINGS" },
+        { "effectType": "GRANT_ADVANTAGE_TO_ATTACKERS" },
+        { "effectType": "AUTO_FAIL_SAVE", "abilityID_Ref_List": ["STR", "DEX"] },
+        {
+            "effectType": "GRANT_RESISTANCE",
+            "resistanceScope": "ALL_DAMAGE", 
+            "details": "The creature has resistance to all damage."
+        },
+        {
+            "effectType": "GRANT_IMMUNITY",
+            "details": "The creature is immune to poison and disease.",
+            "specificImmunities_List": [
+                {
+                    "immunityType": "DAMAGE",
+                    "damageTypeID_Ref": "POISON_DAMAGE"
+                },
+                {
+                    "immunityType": "CONCEPT",
+                    "conceptName": "DISEASE"
+                }
+            ]
+        },
+        { "effectType": "CEASE_AGING" },
+        { "effectType": "WEIGHT_MULTIPLIER", "value": 10 }
+    ]
+}

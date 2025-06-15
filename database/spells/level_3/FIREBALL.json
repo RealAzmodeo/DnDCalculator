@@ -1,0 +1,72 @@
+
+{
+    "spellID": "FIREBALL",
+    "fullName": "Fireball",
+    "level": 3,
+    "schoolOfMagicID_Ref": "EVOCATION",
+    "sourceSystem": "DND_2024_RULES",
+    "ritual": false,
+    "castingTime": {
+        "value": 1,
+        "actionTypeID_Ref": "ACTION"
+    },
+    "range": {
+        "value": 150,
+        "unit": "FEET",
+        "shapeAtOriginIfSelf_Ref": null
+    },
+    "areaOfEffect": {
+        "shapeID_Ref": "SPHERE",
+        "dimensions": { "radius": 20 },
+        "originatesFrom": "POINT_IN_RANGE"
+    },
+    "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "A tiny ball of bat guano and sulfur.",
+        "materialConsumed": false,
+        "materialCost": null
+    },
+    "duration": {
+        "durationTypeID_Ref": "INSTANTANEOUS",
+        "value": null,
+        "unit": null
+    },
+    "descriptionShort": "A bright streak flashes ... an explosion of flame.",
+    "descriptionFull": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.",
+    "higherLevelScaling": {
+        "description": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+        "parsedEffectIncrements_List": [
+            {
+                "incrementPerLevelAboveBase": 1,
+                "effectToModifyIndex": 0, 
+                "modification": {
+                    "damageRolls_List": [{ "diceCountIncrement": 1, "diceID_Ref": "D6" }]
+                }
+            }
+        ]
+    },
+    "parsedEffects_List": [
+        {
+            "effectType": "DEAL_DAMAGE",
+            "targetSelector": "CREATURES_IN_AREA",
+            "damageRolls_List": [
+                {
+                    "diceCount": 8,
+                    "diceID_Ref": "D6",
+                    "damageTypeID_Ref": "FIRE"
+                }
+            ],
+            "savingThrow": {
+                "abilityID_Ref": "DEX",
+                "dcFormula": "CASTER_SPELL_SAVE_DC",
+                "effectOnSuccess": "HALF_DAMAGE"
+            },
+            "additionalEffectsText_List": [
+                "The fire spreads around corners.",
+                "It ignites flammable objects in the area that aren't being worn or carried."
+            ]
+        }
+    ]
+}

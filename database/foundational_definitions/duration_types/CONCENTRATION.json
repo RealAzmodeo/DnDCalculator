@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "CONCENTRATION",
+    "fullName": "Concentration",
+    "description": "Requires concentration to maintain. Can last up to a specified maximum time.",
+    "needsMaxValue": true,
+    "needsMaxUnit": true
+}

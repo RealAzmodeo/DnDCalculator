@@ -1,0 +1,58 @@
+
+{
+    "classID": "WIZARD",
+    "fullName": "Wizard",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A scholarly magic-user capable of manipulating the structures of reality.",
+    "hitDie_Ref": "D6",
+    "primaryAbilitySuggestion_List_Ref": ["INT"],
+    "savingThrowProficiencies_List_Ref": ["INT", "WIS"],
+    "armorProficiencies_Tag_List": [],
+    "weaponProficiencies_Tag_List": ["DAGGERS", "DARTS", "SLINGS", "QUARTERSTAFFS", "LIGHT_CROSSBOWS"],
+    "toolProficiencyOptions": null,
+    "skillProficiencyOptions": {
+        "count": 2,
+        "availableSkillIDs_Ref_List": [
+            "ARCANA", "HISTORY", "INSIGHT", "INVESTIGATION", "MEDICINE", "RELIGION"
+        ]
+    },
+    "startingEquipmentOptions_Structured": [
+        { "choice": "Quarterstaff or Dagger" },
+        { "choice": "Component pouch or Arcane focus" },
+        { "choice": "Scholar's pack or Explorer's pack" },
+        { "item": "Spellbook" }
+    ],
+    "levelProgressionTable": {
+        "1": {
+            "featuresGained_Ref_List": ["WIZARD_SPELLCASTING", "WIZARD_ARCANE_RECOVERY"],
+            "proficiencyBonus": 2,
+            "spellcasting": { "cantripsKnown": 3, "spellSlots": {"1": 2} }
+        },
+        "2": {
+            "featuresGained_Ref_List": ["WIZARD_SUBCLASS_CHOICE"],
+            "notes": "Arcane Tradition choice.",
+            "proficiencyBonus": 2,
+            "spellcasting": { "cantripsKnown": 3, "spellSlots": {"1": 3} }
+        },
+        "3": { 
+            "proficiencyBonus": 2,
+            "spellcasting": { "cantripsKnown": 3, "spellSlots": {"1": 4, "2": 2}}
+        },
+        "4": { 
+            "featuresGained_Ref_List": ["ABILITY_SCORE_IMPROVEMENT_WIZARD_4"],
+            "proficiencyBonus": 2,
+            "spellcasting": { "cantripsKnown": 4, "spellSlots": {"1": 4, "2": 3}}
+        },
+        "5": { 
+            "proficiencyBonus": 3,
+            "spellcasting": { "cantripsKnown": 4, "spellSlots": {"1": 4, "2": 3, "3":2}}
+        }
+    },
+    "subclassChoiceLevel": 2,
+    "subclassTitle": "Arcane Tradition",
+    "spellcastingAbility_Ref": "INT",
+    "spellPreparationRules": {
+        "canPrepare": true,
+        "preparationFormula": "INT_MOD + WIZARD_LEVEL (min 1)"
+    }
+}

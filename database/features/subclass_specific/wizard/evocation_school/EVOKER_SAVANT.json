@@ -1,0 +1,17 @@
+
+{
+    "featureID": "EVOKER_SAVANT",
+    "fullName": "Evocation Savant",
+    "sourceType": "SUBCLASS_FEATURE",
+    "sourceID_Ref": "SCHOOL_OF_EVOCATION_WIZARD",
+    "levelRequirement": 2,
+    "description": "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.",
+    "parsedEffects_List": [
+        {
+            "effectType": "REDUCE_COST_COPY_SPELL",
+            "spellSchoolRestriction_Ref": "EVOCATION",
+            "costReductionFactor": 0.5,
+            "timeReductionFactor": 0.5
+        }
+    ]
+}

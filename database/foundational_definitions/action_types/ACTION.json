@@ -1,0 +1,6 @@
+
+{
+    "actionTypeID": "ACTION",
+    "fullName": "Action",
+    "description": "The primary type of action a creature can take on its turn."
+}

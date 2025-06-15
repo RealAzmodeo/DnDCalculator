@@ -1,0 +1,23 @@
+
+{
+    "featureID": "BATTLEMASTER_COMBAT_SUPERIORITY",
+    "fullName": "Combat Superiority",
+    "sourceType": "SUBCLASS_FEATURE",
+    "sourceID_Ref": "BATTLE_MASTER_WARRIOR",
+    "levelRequirement": 3,
+    "description": "When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice. You gain four superiority dice, which are d8s (this die changes as you gain warrior levels). A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. Your maneuver save DC is 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_RESOURCE",
+            "resourceName": "Superiority Dice",
+            "diceType_Ref": "D8",
+            "initialCount": 4,
+            "rechargeOn_Ref_List": ["SHORT_REST", "LONG_REST"]
+        },
+        {
+            "effectType": "DEFINE_SAVE_DC",
+            "dcName": "Maneuver Save DC",
+            "dcFormula": "8 + PROFICIENCY_BONUS + MAX(STR_MOD, DEX_MOD)"
+        }
+    ]
+}

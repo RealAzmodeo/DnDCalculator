@@ -1,0 +1,21 @@
+
+{
+    "featID": "MAGIC_INITIATE_DIVINE",
+    "fullName": "Magic Initiate (Divine)",
+    "sourceSystem": "DND_2024_RULES",
+    "prerequisites_Structured_List": [],
+    "description": "Choose a class: cleric or druid. You learn two cantrips of your choice from that class's spell list. In addition, you choose one 1st-level spell from that same list. You learn that spell and can cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it in this way again. Your spellcasting ability for these spells depends on the class you chose: Wisdom for cleric or druid.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_SPELL_CHOICE",
+            "spellSourceClassOptions": ["CLERIC", "DRUID"],
+            "cantripsToChoose": 2,
+            "level1SpellsToChoose": 1,
+            "level1SpellUses": {
+                "count": 1,
+                "rechargeOn_Ref_List": ["LONG_REST"]
+            },
+            "spellcastingAbilityNote": "Wisdom for Cleric or Druid."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+
+{
+    "featureID": "WARRIOR_FIGHTING_STYLE_CHOICE",
+    "fullName": "Fighting Style (Warrior)",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WARRIOR",
+    "levelRequirement": 1,
+    "description": "You adopt a particular style of fighting as your specialty. Choose one fighting style option. You can’t take a Fighting Style option more than once, even if you later get to choose again.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_CHOICE_FROM_LIST",
+            "choiceCategory": "FIGHTING_STYLE_WARRIOR"
+        }
+    ]
+}

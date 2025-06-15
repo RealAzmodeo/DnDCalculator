@@ -1,0 +1,14 @@
+
+{
+    "conditionID": "STUNNED",
+    "fullName": "Stunned",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A stunned creature is incapacitated, can't move, and can speak only falteringly. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage.",
+    "parsedEffects_List": [
+        { "effectType": "APPLY_CONDITION", "condition_Ref": "INCAPACITATED" },
+        { "effectType": "SET_SPEED", "value": 0 },
+        { "effectType": "SPEAK_FALTERINGLY" },
+        { "effectType": "AUTO_FAIL_SAVE", "abilityID_Ref_List": ["STR", "DEX"] },
+        { "effectType": "GRANT_ADVANTAGE_TO_ATTACKERS" }
+    ]
+}

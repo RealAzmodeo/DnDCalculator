@@ -1,0 +1,15 @@
+
+{
+    "conditionID": "POISONED_CONDITION",
+    "fullName": "Poisoned",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A poisoned creature has disadvantage on attack rolls and ability checks.",
+    "parsedEffects_List": [
+        {
+            "effectType": "IMPOSE_DISADVANTAGE",
+            "targetScope": "SELF",
+            "onRollType_Ref_List": ["ATTACK_ROLL", "ABILITY_CHECK"],
+            "details": "Disadvantage on attack rolls and ability checks."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+
+{
+    "featureID": "EVOKER_POTENT_CANTRIP",
+    "fullName": "Potent Cantrip",
+    "sourceType": "SUBCLASS_FEATURE",
+    "sourceID_Ref": "SCHOOL_OF_EVOCATION_WIZARD",
+    "levelRequirement": 6,
+    "description": "Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.",
+    "parsedEffects_List": [
+        {
+            "effectType": "MODIFY_CANTRIP_EFFECT_ON_SAVE",
+            "modificationDetails": "Creature succeeding save vs damaging cantrip takes half damage, no additional effects."
+        }
+    ]
+}

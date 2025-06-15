@@ -1,0 +1,16 @@
+
+{
+    "featureID": "GOBLIN_NIMBLE_ESCAPE",
+    "fullName": "Nimble Escape",
+    "sourceType": "CREATURE_ABILITY",
+    "sourceID_Ref": "GOBLIN_MM2024",
+    "levelRequirement": 0,
+    "description": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
+    "parsedEffects_List": [
+        {
+            "effectType": "OTHER_CUSTOM_EFFECT",
+            "details": "Can take the Disengage or Hide action as a bonus action.",
+            "notes": "Game logic must allow Disengage/Hide actions via Bonus Action slot if this feature is present and the creature chooses to use its Bonus Action this way."
+        }
+    ]
+}

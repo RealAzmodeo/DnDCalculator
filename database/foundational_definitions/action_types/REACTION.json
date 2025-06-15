@@ -1,0 +1,6 @@
+
+{
+    "actionTypeID": "REACTION",
+    "fullName": "Reaction",
+    "description": "An instant response to a trigger of some kind, which can occur on your turn or on someone else's."
+}

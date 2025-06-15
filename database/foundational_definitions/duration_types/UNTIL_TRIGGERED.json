@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "UNTIL_TRIGGERED",
+    "fullName": "Until Triggered",
+    "description": "The effect lasts until a specific condition is met or an event occurs.",
+    "needsMaxValue": false,
+    "needsMaxUnit": false
+}

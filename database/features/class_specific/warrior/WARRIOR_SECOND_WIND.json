@@ -1,0 +1,34 @@
+
+{
+    "featureID": "WARRIOR_SECOND_WIND",
+    "fullName": "Second Wind",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WARRIOR",
+    "levelRequirement": 1,
+    "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your warrior level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+    "uses": {
+        "count": 1,
+        "rechargeOn_Ref_List": ["SHORT_REST", "LONG_REST"]
+    },
+    "activationAction_Ref": "BONUS_ACTION",
+    "parsedEffects_List": [
+        {
+            "effectType": "HEAL",
+            "targetSelector": "SELF",
+            "healingRolls_List": [
+                {
+                    "diceCount": 1,
+                    "diceID_Ref": "D10"
+                }
+            ],
+            "healingFormulaBonus_List": [
+                {
+                    "bonusSource": "CLASS_LEVEL",
+                    "classID_Ref": "WARRIOR",
+                    "multiplier": 1
+                }
+            ],
+            "trigger": "ON_ACTIVATION"
+        }
+    ]
+}

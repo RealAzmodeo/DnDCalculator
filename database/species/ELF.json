@@ -1,0 +1,21 @@
+
+{
+    "speciesID": "ELF",
+    "fullName": "Elf",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "Elves are a magical people of otherworldly grace, living in the world but not entirely part of it.",
+    "sizeCategoryID_Ref": "MEDIUM_SIZE",
+    "baseSpeed": { "WALK": 30 },
+    "abilityScoreIncreases_Option": {
+        "type": "CHOOSE_ONE_PLUS_TWO_AND_ONE_PLUS_ONE_OR_THREE_PLUS_ONE",
+        "notes": "Increase one ability score by 2 and another by 1, or increase three different ability scores by 1. (Note: ASI likely moved to Background in 2024)"
+    },
+    "languages_List_Ref": ["COMMON", "ELVISH"],
+    "grantedFeatures_List_Ref": [
+        "ELF_DARKVISION_60FT",
+        "ELF_FEY_ANCESTRY",
+        "ELF_TRANCE",
+        "ELF_KEEN_SENSES"
+    ],
+    "lineageOptions_List_Ref": []
+}

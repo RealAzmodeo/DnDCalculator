@@ -1,0 +1,18 @@
+
+{
+    "backgroundID": "SOLDIER",
+    "fullName": "Soldier",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniques...",
+    "abilityScoreIncreases": [
+        {"abilityID_Ref": "STR", "value": 2},
+        {"abilityID_Ref": "CON", "value": 1}
+    ],
+    "grantedSkillProficiencies_List_Ref": ["ATHLETICS", "INTIMIDATION"],
+    "grantedLanguageOptions": null,
+    "grantedToolProficiencies_List_Ref": ["VEHICLES_LAND"],
+    "startingEquipment_Text": "An insignia of rank, a trophy taken from a fallen enemy, a set of bone dice or deck of cards, a set of common clothes, and a pouch containing 10 gp.",
+    "startingWealth": { "amount": 10, "currencyID_Ref": "GP" },
+    "grantedFeat_Ref": "TOUGH", 
+    "grantedFeature_Ref": "SOLDIER_MILITARY_RANK"
+}

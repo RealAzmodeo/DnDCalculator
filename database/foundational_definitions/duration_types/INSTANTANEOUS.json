@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "INSTANTANEOUS",
+    "fullName": "Instantaneous",
+    "description": "The effect happens and then ends immediately.",
+    "needsMaxValue": false,
+    "needsMaxUnit": false
+}

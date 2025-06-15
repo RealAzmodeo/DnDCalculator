@@ -1,0 +1,21 @@
+
+{
+    "backgroundID": "ACOLYTE",
+    "fullName": "Acolyte",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "You have spent your life in the service of a temple to a specific god or pantheon of gods...",
+    "abilityScoreIncreases": [ 
+        {"abilityID_Ref": "WIS", "value": 2},
+        {"abilityID_Ref": "INT", "value": 1}
+    ],
+    "grantedSkillProficiencies_List_Ref": ["INSIGHT", "RELIGION"],
+    "grantedLanguageOptions": {
+        "count": 2,
+        "type": "CHOOSE_FROM_ANY_STANDARD"
+    },
+    "grantedToolProficiencies_List_Ref": [],
+    "startingEquipment_Text": "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a pouch containing 15 gp.",
+    "startingWealth": { "amount": 15, "currencyID_Ref": "GP" },
+    "grantedFeat_Ref": "MAGIC_INITIATE_DIVINE", 
+    "grantedFeature_Ref": "ACOLYTE_SHELTER_OF_THE_FAITHFUL"
+}

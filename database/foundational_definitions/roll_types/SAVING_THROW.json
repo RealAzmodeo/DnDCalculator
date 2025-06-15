@@ -1,0 +1,6 @@
+
+{
+    "rollTypeID": "SAVING_THROW",
+    "fullName": "Saving Throw",
+    "description": "A d20 roll made to resist a spell, trap, poison, disease, or similar threat."
+}

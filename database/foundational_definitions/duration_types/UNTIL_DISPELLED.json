@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "UNTIL_DISPELLED",
+    "fullName": "Until Dispelled",
+    "description": "The effect lasts until it is dispelled or otherwise ended by magical means.",
+    "needsMaxValue": false,
+    "needsMaxUnit": false
+}

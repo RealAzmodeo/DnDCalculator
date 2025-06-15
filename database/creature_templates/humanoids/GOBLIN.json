@@ -1,0 +1,84 @@
+
+{
+    "creatureDefinitionID": "GOBLIN_MM2024",
+    "fullName": "Goblin",
+    "sourceBookRef": "Monster Manual 2024",
+    "sizeCategoryID_Ref": "SMALL_SIZE",
+    "creatureType": {
+        "type_Ref": "HUMANOID_TYPE",
+        "tags_List": ["GOBLINOID"]
+    },
+    "alignmentSuggestion_List": ["NEUTRAL_EVIL"],
+    "armorClass": {
+        "value": 15,
+        "calculationDetails": "Leather armor, shield",
+        "sources_List_Ref": ["LEATHER_ARMOR", "SHIELD"]
+    },
+    "hitPoints": {
+        "average": 7,
+        "diceFormula": { "diceCount": 2, "diceID_Ref": "D6", "bonus": 0 }
+    },
+    "speed": { "WALK": 30 },
+    "abilityScores": [
+        { "abilityID_Ref": "STR", "value": 8 },
+        { "abilityID_Ref": "DEX", "value": 14 },
+        { "abilityID_Ref": "CON", "value": 10 },
+        { "abilityID_Ref": "INT", "value": 10 },
+        { "abilityID_Ref": "WIS", "value": 8 },
+        { "abilityID_Ref": "CHA", "value": 8 }
+    ],
+    "savingThrowProficiencies_List": [],
+    "skillProficiencies_List": [
+        { "skillID_Ref": "STEALTH", "modifierOverride": 6, "notes": "Proficiency bonus + Dex mod = +4, but Goblins have +6" }
+    ],
+    "senses": {
+        "darkvision": 60
+    },
+    "languages_List_Ref": ["COMMON", "GOBLIN_LANG"],
+    "challengeRating": "1/4",
+    "proficiencyBonus": 2,
+    "specialAbilities_Ref_List": ["GOBLIN_NIMBLE_ESCAPE"],
+    "actions_List": [
+        {
+            "actionName": "Scimitar",
+            "actionType": "MELEE_WEAPON_ATTACK",
+            "attackBonusFormula": "DEX_MOD + PROF_BONUS",
+            "reach": { "value": 5, "unit": "FEET" },
+            "targetDescription": "One target",
+            "onHitEffects_List": [
+                {
+                    "effectType": "DEAL_DAMAGE",
+                    "damageRolls_List": [
+                        {
+                            "diceCount": 1,
+                            "diceID_Ref": "D6",
+                            "bonusDamageFormula": "DEX_MOD", 
+                            "damageTypeID_Ref": "SLASHING"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "actionName": "Javelin",
+            "actionType": "RANGED_WEAPON_ATTACK",
+            "attackBonusFormula": "DEX_MOD + PROF_BONUS",
+            "range": { "short": 30, "long": 120, "unit": "FEET" },
+            "targetDescription": "One target",
+            "onHitEffects_List": [
+                {
+                    "effectType": "DEAL_DAMAGE",
+                    "damageRolls_List": [
+                        {
+                            "diceCount": 1,
+                            "diceID_Ref": "D6",
+                            "bonusDamageFormula": "DEX_MOD",
+                            "damageTypeID_Ref": "PIERCING"
+                        }
+                    ]
+                }
+            ],
+            "notes": "Can also be used as a melee weapon with the same attack/damage."
+        }
+    ]
+}

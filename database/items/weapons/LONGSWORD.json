@@ -1,0 +1,34 @@
+
+{
+    "itemID": "LONGSWORD",
+    "fullName": "Longsword",
+    "itemCategory": "WEAPON_MARTIAL_MELEE",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A versatile martial melee weapon.",
+    "cost": { "amount": 15, "currencyID_Ref": "GP" },
+    "weight": 3,
+    "requiresAttunement": false,
+    "properties": {
+        "weaponSpecifics": {
+            "damageRolls_List": [
+                {
+                    "diceCount": 1,
+                    "diceID_Ref": "D8",
+                    "damageTypeID_Ref": "SLASHING",
+                    "bonusDamage": 0,
+                    "bonusDamageFormula": null
+                }
+            ],
+            "versatileDamageRoll": {
+                "diceCount": 1,
+                "diceID_Ref": "D10",
+                "damageTypeID_Ref": "SLASHING",
+                "bonusDamage": 0,
+                "bonusDamageFormula": null
+            },
+            "range": null,
+            "weaponProperties_Tag_List": ["VERSATILE"]
+        }
+    },
+    "parsedEffects_List": []
+}

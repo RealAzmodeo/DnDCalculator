@@ -1,0 +1,21 @@
+
+{
+    "conditionID": "FRIGHTENED",
+    "fullName": "Frightened",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight. The creature can't willingly move closer to the source of its fear.",
+    "parsedEffects_List": [
+        {
+            "effectType": "IMPOSE_DISADVANTAGE_IF_SOURCE_VISIBLE",
+            "targetScope": "SELF",
+            "onRollType_Ref_List": ["ATTACK_ROLL", "ABILITY_CHECK"],
+            "details": "Disadvantage on attack rolls and ability checks if source of fear is visible."
+        },
+        {
+            "effectType": "RESTRICT_MOVEMENT",
+            "targetScope": "SELF",
+            "restrictionType": "CANNOT_MOVE_CLOSER_TO_SOURCE",
+            "details": "Cannot willingly move closer to the source of fear."
+        }
+    ]
+}

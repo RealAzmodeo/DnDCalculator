@@ -1,0 +1,26 @@
+
+{
+    "itemID": "SHIELD",
+    "fullName": "Shield",
+    "itemCategory": "ARMOR_SHIELD",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.",
+    "cost": { "amount": 10, "currencyID_Ref": "GP" },
+    "weight": 6,
+    "requiresAttunement": false,
+    "properties": {
+        "armorSpecifics": {
+            "acBonus": 2
+        }
+    },
+    "parsedEffects_List": [
+      {
+        "effectType": "GRANT_BONUS",
+        "targetScope": "SELF_WIELDER",
+        "bonusTo_Ref": "ARMOR_CLASS", 
+        "bonusValue": 2,
+        "bonusType": "SHIELD",
+        "details": "Increases Armor Class by 2."
+      }
+    ]
+}

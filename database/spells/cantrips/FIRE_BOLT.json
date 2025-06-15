@@ -1,0 +1,57 @@
+
+{
+    "spellID": "FIRE_BOLT",
+    "fullName": "Fire Bolt",
+    "level": 0,
+    "schoolOfMagicID_Ref": "EVOCATION",
+    "sourceSystem": "DND_2024_RULES",
+    "ritual": false,
+    "castingTime": {
+        "value": 1,
+        "actionTypeID_Ref": "ACTION"
+    },
+    "range": {
+        "value": 120,
+        "unit": "FEET"
+    },
+    "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": false
+    },
+    "duration": {
+        "durationTypeID_Ref": "INSTANTANEOUS",
+        "value": null,
+        "unit": null
+    },
+    "descriptionShort": "Hurl a mote of fire at a creature or object.",
+    "descriptionFull": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+    "parsedEffects_List": [
+        {
+            "effectType": "DEAL_DAMAGE_ON_ATTACK_HIT",
+            "attackType": "RANGED_SPELL_ATTACK",
+            "targetSelector": "ONE_CREATURE_OR_OBJECT",
+            "damageRolls_List": [
+                {
+                    "diceCount": 1,
+                    "diceID_Ref": "D10",
+                    "damageTypeID_Ref": "FIRE"
+                }
+            ],
+            "additionalEffectsText_List": ["A flammable object hit by this spell ignites if it isn't being worn or carried."]
+        }
+    ],
+    "higherLevelScaling": {
+        "description": "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+        "parsedEffectIncrements_List": [
+             {
+                "effectToModifyIndex": 0,
+                "levelBasedIncrements": { 
+                    "5": { "damageRolls_List": [{ "diceCountIncrement": 1, "diceID_Ref": "D10" }] },
+                    "11": { "damageRolls_List": [{ "diceCountIncrement": 1, "diceID_Ref": "D10" }] },
+                    "17": { "damageRolls_List": [{ "diceCountIncrement": 1, "diceID_Ref": "D10" }] }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+
+{
+  "utilityID": "ATTACK_CALCULATOR",
+  "fullName": "Attack & Damage Calculator",
+  "category": "UTILITY",
+  "description": "Simulate D&D 5e/2024 attack and damage rolls. Set up your base attack, add various modifiers and bonus damage sources, define target defenses (resistances, vulnerabilities, immunities), and see the calculated outcome. This tool helps visualize how different mechanics interact to determine the final damage dealt."
+}

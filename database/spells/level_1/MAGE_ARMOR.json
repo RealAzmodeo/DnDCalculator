@@ -1,0 +1,45 @@
+
+{
+    "spellID": "MAGE_ARMOR",
+    "fullName": "Mage Armor",
+    "level": 1,
+    "schoolOfMagicID_Ref": "ABJURATION",
+    "sourceSystem": "DND_2024_RULES",
+    "ritual": false,
+    "castingTime": {
+        "value": 1,
+        "actionTypeID_Ref": "ACTION"
+    },
+    "range": {
+        "value": 0, 
+        "unit": "TOUCH"
+    },
+    "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "A piece of cured leather.",
+        "materialConsumed": false,
+        "materialCost": null
+    },
+    "duration": {
+        "durationTypeID_Ref": "TIME_BASED",
+        "value": 8,
+        "unit": "HOUR"
+    },
+    "descriptionShort": "Protective magical force surrounds a willing creature.",
+    "descriptionFull": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+    "parsedEffects_List": [
+        {
+            "effectType": "SET_BASE_AC",
+            "targetSelector": "WILLING_CREATURE_TOUCHED",
+            "condition": "NOT_WEARING_ARMOR",
+            "acValueFormula": "13 + TARGET_DEX_MOD",
+            "duration": {
+                "durationTypeID_Ref": "UNTIL_TRIGGERED", 
+                "conditionsToEnd_List": ["TARGET_DONS_ARMOR", "DISMISSED_BY_CASTER"],
+                "maxDuration": {"value": 8, "unit": "HOUR"}
+            }
+        }
+    ]
+}

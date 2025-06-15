@@ -1,0 +1,19 @@
+
+{
+    "conditionID": "INCAPACITATED",
+    "fullName": "Incapacitated",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "An incapacitated creature can't take actions or reactions.",
+    "parsedEffects_List": [
+        {
+            "effectType": "PREVENT_ACTIONS",
+            "targetScope": "SELF",
+            "details": "Cannot take actions."
+        },
+        {
+            "effectType": "PREVENT_REACTIONS",
+            "targetScope": "SELF",
+            "details": "Cannot take reactions."
+        }
+    ]
+}

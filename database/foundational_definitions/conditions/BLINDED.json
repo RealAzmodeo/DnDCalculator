@@ -1,0 +1,27 @@
+
+{
+    "conditionID": "BLINDED",
+    "fullName": "Blinded",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "You can't see and automatically fail any ability check that requires sight. Attack rolls against you have advantage, and your attack rolls have disadvantage.",
+    "parsedEffects_List": [
+        {
+            "effectType": "IMPOSE_DISADVANTAGE",
+            "targetScope": "SELF",
+            "onRollType_Ref_List": ["ATTACK_ROLL"],
+            "details": "User's attack rolls have disadvantage."
+        },
+        {
+            "effectType": "GRANT_ADVANTAGE_TO_ATTACKERS",
+            "targetScope": "SELF",
+            "details": "Attack rolls against the user have advantage."
+        },
+        {
+            "effectType": "AUTO_FAIL_CHECK",
+            "targetScope": "SELF",
+            "checkType": "ABILITY_CHECK",
+            "condition": "REQUIRES_SIGHT",
+            "details": "Automatically fail any ability check that requires sight."
+        }
+    ]
+}

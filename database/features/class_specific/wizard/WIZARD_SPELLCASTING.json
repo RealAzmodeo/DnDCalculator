@@ -1,0 +1,17 @@
+
+{
+    "featureID": "WIZARD_SPELLCASTING",
+    "fullName": "Spellcasting (Wizard)",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WIZARD",
+    "levelRequirement": 1,
+    "description": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See the PHB for rules on spellcasting and the Wizard spell list.",
+    "parsedEffects_List": [
+        {
+            "effectType": "ENABLE_SPELLCASTING",
+            "spellcastingAbility_Ref": "INT",
+            "spellListSources": ["WIZARD_SPELL_LIST"],
+            "preparationType": "PREPARED_FROM_SPELLBOOK"
+        }
+    ]
+}

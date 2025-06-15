@@ -1,0 +1,6 @@
+
+{
+    "rollTypeID": "ABILITY_CHECK",
+    "fullName": "Ability Check",
+    "description": "A d20 roll made to overcome a challenge using one of the six ability scores."
+}

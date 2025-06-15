@@ -1,0 +1,25 @@
+
+{
+    "conditionID": "INVISIBLE",
+    "fullName": "Invisible",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves. Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_ADVANTAGE",
+            "targetScope": "SELF",
+            "onRollType_Ref_List": ["ATTACK_ROLL"],
+            "details": "User's attack rolls have advantage."
+        },
+        {
+            "effectType": "GRANT_DISADVANTAGE_TO_ATTACKERS",
+            "targetScope": "SELF",
+            "details": "Attack rolls against the user have disadvantage."
+        },
+        {
+            "effectType": "CONSIDERED_HEAVILY_OBSCURED_FOR_HIDING",
+            "targetScope": "SELF",
+            "details": "For the purpose of hiding, the creature is heavily obscured."
+        }
+    ]
+}

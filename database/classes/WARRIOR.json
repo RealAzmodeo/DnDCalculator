@@ -1,0 +1,46 @@
+
+{
+    "classID": "WARRIOR",
+    "fullName": "Warrior",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+    "hitDie_Ref": "D10",
+    "primaryAbilitySuggestion_List_Ref": ["STR", "DEX"],
+    "savingThrowProficiencies_List_Ref": ["STR", "CON"],
+    "armorProficiencies_Tag_List": ["LIGHT_ARMOR", "MEDIUM_ARMOR", "HEAVY_ARMOR", "SHIELDS"],
+    "weaponProficiencies_Tag_List": ["SIMPLE_WEAPONS", "MARTIAL_WEAPONS"],
+    "toolProficiencyOptions": null,
+    "skillProficiencyOptions": {
+        "count": 2,
+        "availableSkillIDs_Ref_List": [
+            "ACROBATICS", "ANIMAL_HANDLING", "ATHLETICS", "HISTORY",
+            "INSIGHT", "INTIMIDATION", "PERCEPTION", "SURVIVAL"
+        ]
+    },
+    "startingEquipmentOptions_Structured": [ 
+        { "choice": "Chain Mail or Leather Armor, Longbow, and 20 Arrows" },
+        { "choice": "Martial weapon and a shield or two martial weapons" },
+        { "choice": "Light crossbow and 20 bolts or two handaxes" },
+        { "choice": "Dungeoneer's pack or Explorer's pack" }
+    ],
+    "levelProgressionTable": {
+        "1": {
+            "featuresGained_Ref_List": ["WARRIOR_FIGHTING_STYLE_CHOICE", "WARRIOR_SECOND_WIND"],
+            "proficiencyBonus": 2
+        },
+        "2": {
+            "featuresGained_Ref_List": ["WARRIOR_ACTION_SURGE_1USE"],
+            "proficiencyBonus": 2
+        },
+        "3": {
+            "featuresGained_Ref_List": ["WARRIOR_SUBCLASS_CHOICE"],
+            "notes": "Martial Archetype choice.",
+            "proficiencyBonus": 2
+        },
+        "4": { "featuresGained_Ref_List": ["ABILITY_SCORE_IMPROVEMENT_WARRIOR_4"], "proficiencyBonus": 2},
+        "5": { "featuresGained_Ref_List": ["EXTRA_ATTACK_WARRIOR_1"], "proficiencyBonus": 3}
+    },
+    "subclassChoiceLevel": 3,
+    "subclassTitle": "Martial Archetype",
+    "spellcastingAbility_Ref": null
+}

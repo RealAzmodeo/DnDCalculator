@@ -1,0 +1,13 @@
+
+{
+    "actionID": "DISENGAGE_ACTION",
+    "fullName": "Disengage",
+    "actionTypeID_Ref": "ACTION",
+    "description": "If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.",
+    "parsedEffects_List": [
+        {
+            "effectType": "PREVENT_OPPORTUNITY_ATTACKS_ON_SELF_MOVEMENT",
+            "duration": "CURRENT_TURN"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+
+{
+    "featureID": "ELF_KEEN_SENSES",
+    "fullName": "Keen Senses",
+    "sourceType": "SPECIES_FEATURE",
+    "sourceID_Ref": "ELF",
+    "levelRequirement": 1,
+    "description": "You have proficiency in the Perception skill.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_PROFICIENCY",
+            "proficiencyType": "SKILL",
+            "skillID_Ref": "PERCEPTION"
+        }
+    ]
+}

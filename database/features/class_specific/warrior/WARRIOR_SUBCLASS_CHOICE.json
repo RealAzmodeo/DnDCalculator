@@ -1,0 +1,15 @@
+
+{
+    "featureID": "WARRIOR_SUBCLASS_CHOICE",
+    "fullName": "Martial Archetype Choice",
+    "sourceType": "CLASS_FEATURE",
+    "sourceID_Ref": "WARRIOR",
+    "levelRequirement": 3,
+    "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_SUBCLASS_CHOICE",
+            "subclassTitle": "Martial Archetype"
+        }
+    ]
+}

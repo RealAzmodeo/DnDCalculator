@@ -1,0 +1,6 @@
+
+{
+    "rollTypeID": "INITIATIVE_ROLL",
+    "fullName": "Initiative Roll",
+    "description": "A Dexterity check made at the start of combat to determine the order of turns."
+}

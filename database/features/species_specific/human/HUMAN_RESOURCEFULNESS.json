@@ -1,0 +1,22 @@
+
+{
+    "featureID": "HUMAN_RESOURCEFULNESS",
+    "fullName": "Resourcefulness",
+    "sourceType": "SPECIES_FEATURE",
+    "sourceID_Ref": "HUMAN",
+    "levelRequirement": 1,
+    "description": "When you make an ability check, attack roll, or saving throw, you can choose to add 1d4 to the roll. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+    "uses": {
+        "countFormula": "PROFICIENCY_BONUS",
+        "rechargeOn_Ref_List": ["LONG_REST"]
+    },
+    "parsedEffects_List": [
+        {
+            "effectType": "OPTIONAL_ROLL_BONUS",
+            "targetSelector": "SELF",
+            "onRollType_Ref_List": ["ABILITY_CHECK", "ATTACK_ROLL", "SAVING_THROW"],
+            "bonusDice": {"diceCount": 1, "diceID_Ref": "D4"},
+            "trigger": "ON_USER_CHOICE_BEFORE_OUTCOME"
+        }
+    ]
+}

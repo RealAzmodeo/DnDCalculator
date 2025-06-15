@@ -1,0 +1,17 @@
+
+{
+    "featID": "TOUGH",
+    "fullName": "Tough",
+    "sourceSystem": "DND_2024_RULES",
+    "prerequisites_Structured_List": [],
+    "description": "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
+    "parsedEffects_List": [
+        {
+            "effectType": "INCREASE_MAX_HP",
+            "targetSelector": "SELF",
+            "valueFormula": "CHARACTER_LEVEL * 2",
+            "applyOn": "FEAT_GAINED_AND_LEVEL_UP",
+            "duration": "PERMANENT_PASSIVE"
+        }
+    ]
+}

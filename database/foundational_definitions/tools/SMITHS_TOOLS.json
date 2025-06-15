@@ -1,0 +1,13 @@
+
+{
+    "toolID": "SMITHS_TOOLS",
+    "fullName": "Smith's Tools",
+    "category": "Artisan's Tools",
+    "cost": { "amount": 20, "currencyID_Ref": "GP" },
+    "weight": 8,
+    "description": "Includes a hammer, tongs, charcoal, rags, and a whetstone. Used for blacksmithing.",
+    "associatedSkillChecks_List": [
+        { "skillID_Ref": "ATHLETICS", "task_description": "Heavy labor related to smithing" },
+        { "skillID_Ref": "INVESTIGATION", "task_description": "Assess structural integrity of metalwork" }
+    ]
+}

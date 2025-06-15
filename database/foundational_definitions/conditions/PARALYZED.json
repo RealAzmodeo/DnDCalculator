@@ -1,0 +1,36 @@
+
+{
+    "conditionID": "PARALYZED",
+    "fullName": "Paralyzed",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "A paralyzed creature is incapacitated and can't move or speak. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage. Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.",
+    "parsedEffects_List": [
+        {
+            "effectType": "APPLY_CONDITION",
+            "condition_Ref": "INCAPACITATED"
+        },
+        {
+            "effectType": "SET_SPEED",
+            "value": 0,
+            "details": "Cannot move."
+        },
+        {
+            "effectType": "CANNOT_SPEAK",
+            "details": "Cannot speak."
+        },
+        {
+            "effectType": "AUTO_FAIL_SAVE",
+            "abilityID_Ref_List": ["STR", "DEX"],
+            "details": "Automatically fails Strength and Dexterity saving throws."
+        },
+        {
+            "effectType": "GRANT_ADVANTAGE_TO_ATTACKERS",
+            "details": "Attack rolls against the creature have advantage."
+        },
+        {
+            "effectType": "ATTACKS_BECOME_CRITICAL",
+            "condition": "ATTACKER_WITHIN_5_FEET",
+            "details": "Any attack that hits is a critical hit if attacker is within 5 feet."
+        }
+    ]
+}

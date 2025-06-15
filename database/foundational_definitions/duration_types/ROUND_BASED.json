@@ -1,0 +1,8 @@
+
+{
+    "durationTypeID": "ROUND_BASED",
+    "fullName": "Round-Based",
+    "description": "The effect lasts for a specific number of rounds.",
+    "needsMaxValue": true,
+    "needsMaxUnit": false 
+}

@@ -1,0 +1,23 @@
+
+{
+    "featureID": "ELF_FEY_ANCESTRY",
+    "fullName": "Fey Ancestry",
+    "sourceType": "SPECIES_FEATURE",
+    "sourceID_Ref": "ELF",
+    "levelRequirement": 1,
+    "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+    "parsedEffects_List": [
+        {
+            "effectType": "GRANT_ADVANTAGE_ON_SAVE",
+            "targetSelector": "SELF",
+            "againstCondition_Ref_List": ["CHARMED"],
+            "duration": "PERMANENT_PASSIVE"
+        },
+        {
+            "effectType": "GRANT_IMMUNITY",
+            "targetSelector": "SELF",
+            "immunityToEffectType": "MAGICAL_SLEEP",
+            "duration": "PERMANENT_PASSIVE"
+        }
+    ]
+}

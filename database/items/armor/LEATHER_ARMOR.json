@@ -1,0 +1,21 @@
+
+{
+    "itemID": "LEATHER_ARMOR",
+    "fullName": "Leather Armor",
+    "itemCategory": "ARMOR_LIGHT",
+    "sourceSystem": "DND_2024_RULES",
+    "description": "Made from supple and thin leather, this armor offers basic protection.",
+    "cost": { "amount": 10, "currencyID_Ref": "GP" },
+    "weight": 10,
+    "requiresAttunement": false,
+    "properties": {
+        "armorSpecifics": {
+            "baseAC": 11,
+            "addDexModifier": true,
+            "maxDexModifier": null, 
+            "stealthDisadvantage": false,
+            "strengthRequirement": 0
+        }
+    },
+    "parsedEffects_List": []
+}

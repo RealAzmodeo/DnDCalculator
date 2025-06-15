@@ -1,0 +1,6 @@
+{
+  "name": "D&D 2024 Data Modeler v5",
+  "description": "A web application to explore and visualize the Dungeons & Dragons 2024 data model and templates for classes, spells, items, and other game mechanics.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
